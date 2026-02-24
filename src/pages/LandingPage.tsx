@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import iruLogo from "@/assets/IRU_Intima_Logo.png";
 import "./LandingPage.css";
 
 const featuredData = [
@@ -76,7 +77,7 @@ const LandingPage: React.FC = () => {
         <div className="drawer-backdrop" onClick={() => setDrawerOpen(false)} />
         <div className="drawer-panel">
           <Link to="/" className="iru-brand">
-            <div className="iru-brand-badge">IR</div>
+            <div className="iru-brand-badge"><img src={iruLogo} alt="IRU Intima" /></div>
             <div>IRU Intima<small>Private Content Hub</small></div>
           </Link>
           <div className="drawer-links">
@@ -94,7 +95,7 @@ const LandingPage: React.FC = () => {
           <button className="menu-toggle" onClick={() => setDrawerOpen(true)} aria-label="Open menu">☰</button>
 
           <Link to="/" className="iru-brand">
-            <div className="iru-brand-badge">IR</div>
+            <div className="iru-brand-badge"><img src={iruLogo} alt="IRU Intima" /></div>
             <div>IRU Intima<small>Private Content Hub</small></div>
           </Link>
 

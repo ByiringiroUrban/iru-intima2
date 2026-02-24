@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import iruLogo from "@/assets/IRU_Intima_Logo.png";
 
 interface DrawerProps {
   open: boolean;
@@ -17,7 +18,7 @@ const IruDrawer: React.FC<DrawerProps> = ({ open, onClose, subtitle = "Private C
       <div className="iru-drawer-backdrop" onClick={onClose} />
       <div className="iru-drawer-panel">
         <Link to="/" className="iru-brand" onClick={onClose}>
-          <div className="iru-brand-badge">IR</div>
+          <div className="iru-brand-badge"><img src={iruLogo} alt="IRU Intima" /></div>
           <div>
             IRU Intima
             <small>{subtitle}</small>
