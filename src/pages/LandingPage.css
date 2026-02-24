@@ -39,7 +39,7 @@
 .search-wrap {
   margin-left: auto;
   flex: 1;
-  max-width: 360px;
+  max-width: 500px;
   position: relative;
 }
 
@@ -48,7 +48,7 @@
   background: #181a22;
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 12px;
-  padding: 11px 12px 11px 40px;
+  padding: 11px 14px;
   outline: none;
   transition: .2s ease;
   color: hsl(var(--foreground));

@@ -103,17 +103,15 @@ const LandingPage: React.FC = () => {
             <a href="#featured">Featured</a>
             <a href="#latest">Latest</a>
             <a href="#creators">Creators</a>
-            <a href="#join">Join</a>
           </nav>
 
           <div className="search-wrap">
-            <span className="search-icon">🔎</span>
             <input type="text" placeholder="Search videos, creators, tags..." value={searchTerm} onChange={e => setSearchTerm(e.target.value)} />
           </div>
 
           <div className="actions-landing">
             <Link to="/login" className="iru-btn iru-btn-ghost">Login</Link>
-            <Link to="/login" className="iru-btn iru-btn-accent">Join Now</Link>
+            <Link to="/login" className="iru-btn iru-btn-accent">Creator</Link>
           </div>
         </div>
       </header>
