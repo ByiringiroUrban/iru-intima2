@@ -4,17 +4,14 @@
   display: grid;
   place-items: center;
   padding: 20px;
-  background:
-    radial-gradient(900px 400px at -10% -10%, rgba(155,60,200,.22), transparent 55%),
-    radial-gradient(800px 380px at 110% 10%, rgba(200,80,160,.15), transparent 55%),
-    linear-gradient(180deg,#0c0e13,#0f1014 40%, #0c0e13);
+  background: #0c0e13;
 }
 
 .auth-shell {
   width: min(1080px, 100%);
   display: grid;
   grid-template-columns: 1.05fr .95fr;
-  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  background: rgba(255,255,255,.02);
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 22px;
   overflow: hidden;
@@ -25,10 +22,7 @@
   position: relative;
   padding: 26px;
   border-right: 1px solid rgba(255,255,255,.08);
-  background:
-    radial-gradient(650px 240px at -10% 0%, rgba(155,60,200,.25), transparent 55%),
-    radial-gradient(650px 240px at 110% 10%, rgba(200,80,160,.15), transparent 55%),
-    linear-gradient(160deg, #171920 0%, #12141b 100%);
+  background: #171920;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -76,7 +70,7 @@
 .preview {
   margin-top: auto;
   border: 1px solid rgba(255,255,255,.08);
-  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  background: rgba(255,255,255,.02);
   border-radius: 16px;
   padding: 12px;
   display: grid;
@@ -96,7 +90,7 @@
 .mini span { display: block; margin-top: 4px; color: hsl(var(--muted-foreground)); font-size: .75rem; }
 
 /* Auth Panel */
-.auth-panel { padding: 22px; background: linear-gradient(180deg, rgba(255,255,255,.01), rgba(255,255,255,.00)); }
+.auth-panel { padding: 22px; background: rgba(255,255,255,.01); }
 .top-actions-auth { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
 .back-link {
   color: hsl(var(--muted-foreground)); font-size: .88rem;
@@ -107,9 +101,9 @@
 
 .tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; background: rgba(255,255,255,.02); border: 1px solid rgba(255,255,255,.08); padding: 6px; border-radius: 14px; margin-bottom: 14px; }
 .tab { border: none; cursor: pointer; border-radius: 10px; padding: 10px 12px; background: transparent; color: hsl(var(--muted-foreground)); font-weight: 700; transition: .18s ease; }
-.tab.active { color: #fff; background: linear-gradient(135deg, hsl(280 60% 55%), hsl(330 70% 60%)); box-shadow: 0 8px 20px rgba(155,60,200,.25); }
+.tab.active { color: #fff; background: hsl(280 60% 55%); box-shadow: 0 8px 20px rgba(155,60,200,.25); }
 
-.auth-card { border: 1px solid rgba(255,255,255,.08); background: linear-gradient(180deg, rgba(255,255,255,.015), rgba(255,255,255,.005)); border-radius: 16px; padding: 16px; }
+.auth-card { border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.015); border-radius: 16px; padding: 16px; }
 .auth-card h2 { margin: 0; font-size: 1.05rem; }
 .auth-card .subtitle { margin: 6px 0 0; color: hsl(var(--muted-foreground)); font-size: .88rem; line-height: 1.45; }
 

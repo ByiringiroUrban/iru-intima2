@@ -139,10 +139,7 @@
   overflow: hidden;
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 20px;
-  background:
-    radial-gradient(800px 260px at -5% -20%, rgba(155,60,200,.25), transparent 60%),
-    radial-gradient(700px 260px at 105% 0%, rgba(200,80,160,.20), transparent 60%),
-    linear-gradient(160deg, #181a23 0%, #13151c 100%);
+  background: #181a23;
   padding: 26px;
   box-shadow: 0 12px 35px rgba(0,0,0,.35);
   display: grid;
@@ -203,7 +200,7 @@
 .hero-side {
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,.08);
-  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  background: rgba(255,255,255,.02);
   padding: 14px;
   display: grid;
   gap: 10px;
@@ -223,9 +220,7 @@
 .mini-thumb {
   height: 66px;
   border-radius: 10px;
-  background:
-    linear-gradient(135deg, rgba(155,60,200,.65), rgba(255,255,255,.06)),
-    linear-gradient(35deg, #2a2040, #1b1929);
+  background: #2a2040;
   position: relative;
   overflow: hidden;
 }
@@ -278,7 +273,7 @@
 }
 
 .card {
-  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  background: rgba(255,255,255,.02);
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 14px;
   overflow: hidden;
@@ -293,10 +288,7 @@
 
 .thumb {
   aspect-ratio: 16 / 9;
-  background:
-    radial-gradient(circle at 70% 20%, rgba(155,60,200,.28), transparent 35%),
-    radial-gradient(circle at 25% 80%, rgba(200,80,160,.18), transparent 35%),
-    linear-gradient(135deg, #2a2038 0%, #1e1b2b 45%, #171521 100%);
+  background: #221c30;
   position: relative;
   overflow: hidden;
 }
@@ -305,7 +297,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.25) 65%, rgba(0,0,0,.65) 100%);
+  background: rgba(0,0,0,.35);
 }
 
 .badge {
@@ -409,9 +401,7 @@
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 18px;
   padding: 18px;
-  background:
-    radial-gradient(500px 180px at 10% 0%, rgba(155,60,200,.18), transparent 60%),
-    linear-gradient(180deg, #171a23 0%, #12141b 100%);
+  background: #171a23;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -457,7 +447,7 @@
 }
 .age-card {
   width: min(520px, 100%);
-  background: linear-gradient(180deg, #181b24, #11131a);
+  background: #181b24;
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 18px;
   box-shadow: 0 20px 60px rgba(0,0,0,.45);
