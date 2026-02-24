@@ -55,8 +55,8 @@
 }
 
 .search-wrap input:focus {
-  border-color: rgba(255,122,0,.6);
-  box-shadow: 0 0 0 4px rgba(255,122,0,.15);
+  border-color: rgba(155,60,200,.6);
+  box-shadow: 0 0 0 4px rgba(155,60,200,.15);
 }
 
 .search-icon {
@@ -140,8 +140,8 @@
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 20px;
   background:
-    radial-gradient(800px 260px at -5% -20%, rgba(255,122,0,.25), transparent 60%),
-    radial-gradient(700px 260px at 105% 0%, rgba(255,90,0,.18), transparent 60%),
+    radial-gradient(800px 260px at -5% -20%, rgba(155,60,200,.25), transparent 60%),
+    radial-gradient(700px 260px at 105% 0%, rgba(200,80,160,.20), transparent 60%),
     linear-gradient(160deg, #181a23 0%, #13151c 100%);
   padding: 26px;
   box-shadow: 0 12px 35px rgba(0,0,0,.35);
@@ -224,8 +224,8 @@
   height: 66px;
   border-radius: 10px;
   background:
-    linear-gradient(135deg, rgba(255,122,0,.65), rgba(255,255,255,.06)),
-    linear-gradient(35deg, #2a2f40, #1b1e29);
+    linear-gradient(135deg, rgba(155,60,200,.65), rgba(255,255,255,.06)),
+    linear-gradient(35deg, #2a2040, #1b1929);
   position: relative;
   overflow: hidden;
 }
@@ -287,16 +287,16 @@
 }
 .card:hover {
   transform: translateY(-2px);
-  border-color: rgba(255,122,0,.35);
+  border-color: rgba(155,60,200,.35);
   box-shadow: 0 12px 28px rgba(0,0,0,.28);
 }
 
 .thumb {
   aspect-ratio: 16 / 9;
   background:
-    radial-gradient(circle at 70% 20%, rgba(255,122,0,.28), transparent 35%),
-    radial-gradient(circle at 25% 80%, rgba(255,140,40,.18), transparent 35%),
-    linear-gradient(135deg, #2a2d38 0%, #1e212b 45%, #171921 100%);
+    radial-gradient(circle at 70% 20%, rgba(155,60,200,.28), transparent 35%),
+    radial-gradient(circle at 25% 80%, rgba(200,80,160,.18), transparent 35%),
+    linear-gradient(135deg, #2a2038 0%, #1e1b2b 45%, #171521 100%);
   position: relative;
   overflow: hidden;
 }
@@ -410,7 +410,7 @@
   border-radius: 18px;
   padding: 18px;
   background:
-    radial-gradient(500px 180px at 10% 0%, rgba(255,122,0,.15), transparent 60%),
+    radial-gradient(500px 180px at 10% 0%, rgba(155,60,200,.18), transparent 60%),
     linear-gradient(180deg, #171a23 0%, #12141b 100%);
   display: flex;
   align-items: center;

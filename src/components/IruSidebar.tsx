@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import iruLogo from "@/assets/IRU_Intima_Logo.png";
 
 interface SidebarProps {
   subtitle?: string;
@@ -14,7 +15,7 @@ const IruSidebar: React.FC<SidebarProps> = ({ subtitle = "Private Content Hub", 
   return (
     <aside className="iru-sidebar">
       <Link to="/" className="iru-brand">
-        <div className="iru-brand-badge">IR</div>
+        <div className="iru-brand-badge"><img src={iruLogo} alt="IRU Intima" /></div>
         <div>
           IRU Intima
           <small>{subtitle}</small>
