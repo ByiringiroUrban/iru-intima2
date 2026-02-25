@@ -41,6 +41,16 @@ const LandingPage: React.FC = () => {
   const [searchFilter, setSearchFilter] = useState("all");
   const [filterDropdownOpen, setFilterDropdownOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [theme, setTheme] = useState(() => localStorage.getItem("iru_theme") || "dark");
+
+  useEffect(() => {
+    document.body.classList.toggle("light", theme === "light");
+    localStorage.setItem("iru_theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === "dark" ? "light" : "dark");
+  };
 
   const searchFilters = ["all", "featured", "latest", "country", "creators", "trending"];
 
@@ -104,9 +114,9 @@ const LandingPage: React.FC = () => {
           </Link>
 
           <nav className="nav-landing">
-            <a href="#featured">Featured</a>
+            {/* <a href="#featured">Featured</a>
             <a href="#latest">Latest</a>
-            <a href="#creators">Creators</a>
+            <a href="#creators">Creators</a> */}
           </nav>
 
           <div className="search-wrap">
@@ -132,6 +142,9 @@ const LandingPage: React.FC = () => {
           </div>
 
           <div className="actions-landing">
+            <button className="iru-btn iru-btn-ghost" onClick={toggleTheme} title="Toggle theme">
+              {theme === "dark" ? "☀️" : "🌙"}
+            </button>
             <Link to="/login" className="iru-btn iru-btn-ghost">Login</Link>
             <Link to="/login" className="iru-btn iru-btn-accent">Creator</Link>
           </div>
