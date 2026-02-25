@@ -459,10 +459,10 @@
   border: 1px solid rgba(255,255,255,.08);
   background: rgba(255,255,255,.02);
   color: hsl(var(--muted-foreground));
-  padding: 9px 12px;
-  border-radius: 999px;
+  padding: 5px 12px;
+  border-radius: 99px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
   transition: .2s ease;
   user-select: none;
 }

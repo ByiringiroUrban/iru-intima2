@@ -4,9 +4,10 @@ import { VideoContent } from "@/types/content";
 
 interface VideoCardProps {
   video: VideoContent;
+  onVideoClick: (video: VideoContent) => void;
 }
 
-export const VideoCard: React.FC<VideoCardProps> = ({ video }) => {
+export const VideoCard: React.FC<VideoCardProps> = ({ video, onVideoClick }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -38,7 +39,7 @@ export const VideoCard: React.FC<VideoCardProps> = ({ video }) => {
   };
 
   const handleVideoClick = () => {
-    window.open(video.videoUrl, "_blank");
+    onVideoClick(video);
   };
 
   return (

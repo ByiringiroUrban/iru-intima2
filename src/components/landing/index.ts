@@ -7,3 +7,4 @@ export { VideoGrid } from "./VideoGrid";
 export { CreatorsSection } from "./CreatorsSection";
 export { CTASection } from "./CTASection";
 export { Footer } from "./Footer";
+export { VideoModal } from "./VideoModal";

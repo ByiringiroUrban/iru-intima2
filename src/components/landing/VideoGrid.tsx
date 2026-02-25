@@ -7,9 +7,10 @@ interface VideoGridProps {
   videos: VideoContent[];
   sectionId?: string;
   showViewAll?: boolean;
+  onVideoClick: (video: VideoContent) => void;
 }
 
-export const VideoGrid: React.FC<VideoGridProps> = ({ title, videos, sectionId, showViewAll = true }) => {
+export const VideoGrid: React.FC<VideoGridProps> = ({ title, videos, sectionId, showViewAll = true, onVideoClick }) => {
   return (
     <section id={sectionId} className="mt-10">
       <div className="section-head">
@@ -20,7 +21,7 @@ export const VideoGrid: React.FC<VideoGridProps> = ({ title, videos, sectionId, 
         {videos.length === 0 ? (
           <div className="empty-state show">No matching content found. Try another keyword or filter.</div>
         ) : (
-          videos.map((video) => <VideoCard key={video.id} video={video} />)
+          videos.map((video) => <VideoCard key={video.id} video={video} onVideoClick={onVideoClick} />)
         )}
       </div>
     </section>

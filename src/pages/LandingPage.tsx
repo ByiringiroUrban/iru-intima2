@@ -11,6 +11,7 @@ import {
   CreatorsSection,
   CTASection,
   Footer,
+  VideoModal,
 } from "@/components/landing";
 import "./LandingPage.css";
 
@@ -24,6 +25,8 @@ const LandingPage: React.FC = () => {
   const [filterDropdownOpen, setFilterDropdownOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [theme, setTheme] = useState(() => localStorage.getItem("iru_theme") || "dark");
+  const [selectedVideo, setSelectedVideo] = useState<VideoContent | null>(null);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
   useEffect(() => {
     document.body.classList.toggle("light", theme === "light");
@@ -59,6 +62,16 @@ const LandingPage: React.FC = () => {
   const filteredFeatured = filterVideos(featuredVideos);
   const filteredLatest = filterVideos(latestVideos);
 
+  const handleVideoClick = (video: VideoContent) => {
+    setSelectedVideo(video);
+    setIsVideoModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsVideoModalOpen(false);
+    setSelectedVideo(null);
+  };
+
   return (
     <>
       {!ageVerified && <AgeGate onVerify={handleAgeVerify} />}
@@ -88,6 +101,7 @@ const LandingPage: React.FC = () => {
           }
           videos={filteredFeatured}
           sectionId="featured"
+          onVideoClick={handleVideoClick}
         />
 
         <VideoGrid
@@ -98,6 +112,7 @@ const LandingPage: React.FC = () => {
           }
           videos={filteredLatest}
           sectionId="latest"
+          onVideoClick={handleVideoClick}
         />
 
         <CreatorsSection creators={topCreators} />
@@ -106,6 +121,8 @@ const LandingPage: React.FC = () => {
       </main>
 
       <Footer />
+
+      <VideoModal video={selectedVideo} isOpen={isVideoModalOpen} onClose={handleCloseModal} />
     </>
   );
 };
